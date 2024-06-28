@@ -6,13 +6,21 @@ body {
   height: 100vh;
   background-color: #111f37;
   color: white;
-  font-family: cursive;
+  font-family:  Arial, sans-serif !important;
 }
 
 code {
-  font-family: cursive;
+  font-family:  Arial, sans-serif;
 }
 
 .MuiInputBase-root {
-  font-family: cursive !important;
+  font-family:  Arial, sans-serif !important;
+}
+
+.page_main_container {
+  padding: 20px;
+}
+
+.text_bold {
+  font-weight: bold !important;
 }

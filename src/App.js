@@ -1,11 +1,9 @@
-import React from 'react';
-import './App.css';
-import WeatherDashboard from './pages/WeatherDashboard';
+import React from "react";
+import "./App.css";
+import AppRoutes from "./router/AppRoutes";
 
 function App() {
-  return (
-    <WeatherDashboard />
-  );
+  return <AppRoutes />;
 }
 
 export default App;

@@ -41,11 +41,11 @@ const CustomDatePicker = (props) => {
               sx: {
                 backgroundColor: "#424662",
                 mt: "2px",
-                fontFamily: "cursive",
+                fontFamily: "Arial, sans-serif",
                 // Style MUI ButtonBase inside MuiPickersLayout
                 "& .MuiButtonBase-root": {
                   color: "white",
-                  fontFamily: "cursive",
+                  fontFamily: " Arial, sans-serif",
                   
                   // Customize disabled state
                   "&.Mui-disabled": {
@@ -55,7 +55,7 @@ const CustomDatePicker = (props) => {
                 
                 "& .MuiPickersCalendarHeader-label, & .MuiPickersDay-root:not(.Mui-selected), & .MuiDayCalendar-weekDayLabel":
                 {
-                    fontFamily: "cursive",
+                    fontFamily: " Arial, sans-serif",
                     color: "white",
                     borderColor: "white",
                   },

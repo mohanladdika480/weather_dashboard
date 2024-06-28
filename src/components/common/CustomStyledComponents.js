@@ -3,9 +3,8 @@ import { TextField, Button } from "@mui/material";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 
 export const CustomTextField = styled(TextField)`
-  .MuiFormControl-root {
-    background-color: #424662 !important;
-  }
+  background-color: #424662 !important;
+  
   & input {
     color: white;
     overflow: unset;
@@ -39,7 +38,7 @@ export const PrimaryButton = styled(Button)(({ theme }) => ({
   backgroundColor: "#ff009061",
   color: "white",
   fontWeight: "bold",
-  fontFamily: "cursive",
+  fontFamily: "Arial, sans-serif",
   textTransform: "none",
   "&:hover": {
     backgroundColor: "#ff0c0c69",
@@ -53,7 +52,7 @@ export const SecondaryButton = styled(Button)(({ theme }) => ({
   fontWeight: "bold",
   border: "2px solid #ff009061",
   textTransform: "none",
-  fontFamily: "cursive",
+  fontFamily: "Arial, sans-serif",
   "&:hover": {
     backgroundColor: "#ff0c0c69",
     border: "0px",

@@ -1,0 +1,74 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #882e14;
+  color: white;
+  font-family: Arial, sans-serif;
+  align-items: center;
+
+  .brand_name {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .tabs {
+    display: flex;
+
+    .tab {
+      margin-left: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &.active,
+      &:hover {
+        padding-bottom: 1px;
+        border-bottom: 2px solid white;
+      }
+    }
+  }
+
+  .menu_icon {
+    display: none;
+    padding: 0px;
+  }
+
+
+  /* Hide tabs on mobile view */
+  @media (max-width: 600px) {
+    justify-content: flex-start;
+    gap: 10px;
+
+    .brand_name {
+      font-size: 18px;
+    }
+
+    .tabs {
+      display: none;
+    }
+
+    .menu_icon {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+}
+
+
+
+:global(.MuiDrawer-paper) {
+  background-color: #882e14 !important;
+  color: white;
+  width: fit-content;
+  padding-top: 0px;
+
+  :global(.MuiListItem-root) {
+    color: white;
+    cursor: pointer;
+    padding: 0px;
+    margin: 16px;
+    width: fit-content;
+  }
+}

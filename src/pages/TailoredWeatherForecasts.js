@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import { Box } from "@mui/material";
 
 const TailoredWeatherForecasts = () => {
-  return (
-    <div>TailoredWeatherForecasts</div>
-  )
-}
+  return <Box className="page_main_container">TailoredWeatherForecasts</Box>;
+};
 
-export default TailoredWeatherForecasts
+export default TailoredWeatherForecasts;

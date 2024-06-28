@@ -1,31 +1,31 @@
 import React from "react";
-import CustomDatePicker from "../components/common/CustomDatePicker";
-import { Box } from "@mui/material";
-import { CustomTextField, PrimaryButton, SecondaryButton } from "../components/common/CustomStyledComponents";
-import ButtonLoader from "../components/common/ButtonLoader";
+import { Box, Typography, InputAdornment } from "@mui/material";
+import { CustomTextField } from "../components/common/CustomStyledComponents";
+import SearchIcon from "@mui/icons-material/Search";
 
 const WeatherDashboard = () => {
   return (
-    <>
-      <div>WeatherDashboard</div>
-      <CustomDatePicker />
-      <Box
-        sx={{
-          width: "90vw",
-          height: "100px",
-          backgroundColor: "#424662",
-          m: "10px",
-          borderRadius: "8px",
-        }}
-      ></Box>
-      <CustomTextField />
-      <PrimaryButton>
-        <ButtonLoader isBtnLoading={true} btnText={"Submit"}/>
-      </PrimaryButton>
-      <SecondaryButton sx={{ml: "10px"}}>
-        <ButtonLoader isBtnLoading={false} btnText={"Submit"}/>
-      </SecondaryButton>
-    </>
+    <Box className="page_main_container">
+      <Box sx={{ maxWidth: "400px" }}>
+        <Typography className="text_bold" sx={{ mb: "5px" }}>
+          Enter City Name
+        </Typography>
+        <CustomTextField
+          fullWidth
+          placeholder="City name"
+          InputProps={{
+            endAdornment: (
+              <InputAdornment position="end">
+                <SearchIcon
+                  sx={{ ml: "10px", cursor: "pointer", color: "white" }}
+                  onClick={() => {}}
+                />
+              </InputAdornment>
+            ),
+          }}
+        />
+      </Box>
+    </Box>
   );
 };
 
