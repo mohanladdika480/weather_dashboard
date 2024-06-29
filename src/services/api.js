@@ -20,7 +20,7 @@ const apiRequest = async ({
   const config = {
     method: method,
     url: url,
-    params: params,
+    params: { ...params, key: "2f47040fab764b5581c132326242806" },
     headers: headers || api.defaults.headers,
     data: data,
     baseURL: baseURL || api.defaults.baseURL,

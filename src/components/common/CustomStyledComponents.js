@@ -3,7 +3,9 @@ import { TextField, Button } from "@mui/material";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 
 export const CustomTextField = styled(TextField)`
-  background-color: #424662 !important;
+  .MuiOutlinedInput-root {
+    background-color: #424662 !important;
+  }
   
   & input {
     color: white;
@@ -31,6 +33,12 @@ export const CustomTextField = styled(TextField)`
     background-color: #424662;
   }
   border-radius: 8px;
+  .MuiFormHelperText-root {
+    margin: 3px 0 0;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    color: red;
+  }
 `;
 
 export const PrimaryButton = styled(Button)(({ theme }) => ({

@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import WeatherDashboard from "../pages/WeatherDashboard";
 import TailoredWeatherForecasts from "../pages/TailoredWeatherForecasts";
 import Header from "../components/Header/Header";
-import { RoutingURLs } from "../components/common/RoutingURLs";
+import { RoutingURLs } from "../components/constants/RoutingURLs";
 
 const AppRoutes = () => {
   return (

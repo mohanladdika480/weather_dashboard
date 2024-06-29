@@ -3,7 +3,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { Box, IconButton, Drawer, List, ListItem } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import styles from "./Header.module.scss";
-import { RoutingURLs } from "../common/RoutingURLs";
+import { RoutingURLs } from "../constants/RoutingURLs";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -52,7 +52,7 @@ const Header = () => {
           </List>
         </Box>
       </Drawer>
-      <Box className={styles.brand_name}>Weather Forecast</Box>
+      <Box className={styles.brand_name} onClick={() => handleTabClick(RoutingURLs.dashboard)}>Weather Forecast</Box>
       <Box className={styles.tabs}>
         <Box
           className={`${styles.tab} ${

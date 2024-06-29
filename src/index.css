@@ -2,25 +2,130 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: #111f37;
   color: white;
-  font-family:  Arial, sans-serif !important;
+  font-family: Arial, sans-serif !important;
 }
 
 code {
-  font-family:  Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
+h1,
+h2,
+h3,
+p,
 .MuiInputBase-root {
-  font-family:  Arial, sans-serif !important;
+  font-family: Arial, sans-serif !important;
 }
 
 .page_main_container {
   padding: 20px;
 }
 
+.card_style {
+  background: #424662;
+  margin-top: 5px;
+  border-radius: 6px;
+  padding: 15px;
+}
+
+
+.text_1 {
+  font-size: 14px !important;
+  font-weight: bold !important;
+
+  @media screen and (max-width: 600px) {
+    font-size: 12px !important;
+  }
+}
+
+.text_2 {
+  font-size: 16px !important;
+  font-weight: bold !important;
+
+  @media screen and (max-width: 600px) {
+    font-size: 12px !important;
+  }
+}
+
+.text_3 {
+  font-size: 14px !important;
+
+  @media screen and (max-width: 600px) {
+    font-size: 12px !important;
+  }
+}
+
+.text_4 {
+  font-size: 18px !important;
+  font-weight: bold !important;
+
+  @media screen and (max-width: 600px) {
+    font-size: 14px !important;
+  }
+}
+
+.ml_5 {
+  margin-left: 5px !important;
+}
+
+.mt_5 {
+  margin-top: 5px !important;
+}
+
+.mt_2 {
+  margin-top: 2px !important;
+}
+
 .text_bold {
   font-weight: bold !important;
+}
+
+.text_normal {
+  font-weight: 500 !important;
+}
+
+.icon_1 {
+  width: 30px;
+  height: 30px;
+
+  @media screen and (max-width: 600px) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.text_color1 {
+  color: #c0bfbf;
+}
+
+
+.horizontal_scroll_style {
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-behavior: smooth;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.active_card_style {
+  background-color: #616790;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.hover_card_styles {
+  padding: 5px;
+
+  &:hover {
+    background-color: #616790;
+    border-radius: 20px;
+  }
 }
