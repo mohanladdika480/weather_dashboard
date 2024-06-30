@@ -78,7 +78,7 @@ const WeatherDashboard = () => {
             endAdornment: (
               <InputAdornment position="end">
                 <SearchIcon
-                  sx={{ ml: "10px", cursor: "pointer", color: "white" }}
+                  sx={{ ml: "10px", cursor: "pointer", color: "#dad7d7" }}
                   onClick={handleSubmit}
                 />
               </InputAdornment>
@@ -115,11 +115,11 @@ const WeatherDashboard = () => {
             fontWeight: "bold",
           }}
         >
-          No data found
+          Data not found for the specified location.
         </Typography>
       )}
       {forecastData && renderForecastDetails()}
-      <PageLoader loading={isLoading} />
+      {isLoading && <PageLoader loading={isLoading} />}
     </Box>
   );
 };

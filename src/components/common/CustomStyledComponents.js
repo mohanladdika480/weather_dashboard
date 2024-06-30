@@ -5,10 +5,11 @@ import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 export const CustomTextField = styled(TextField)`
   .MuiOutlinedInput-root {
     background-color: #424662 !important;
+    border-radius: 8px;
   }
-  
+
   & input {
-    color: white;
+    color: #dad7d7;
     overflow: unset;
     padding: 12px 14px;
     height: 20px !important;
@@ -17,7 +18,7 @@ export const CustomTextField = styled(TextField)`
     background: #424662;
     min-width: 0 !important;
     &::placeholder {
-      color: white !important;
+      color: #dad7d7 !important;
       opacity: 0.5;
     }
   }
@@ -37,14 +38,14 @@ export const CustomTextField = styled(TextField)`
     margin: 3px 0 0;
     font-size: 14px;
     font-family: Arial, sans-serif;
-    color: red;
+    color: #d32f2f;
   }
 `;
 
 export const PrimaryButton = styled(Button)(({ theme }) => ({
   padding: "8px 12px",
   backgroundColor: "#ff009061",
-  color: "white",
+  color: "#dad7d7",
   fontWeight: "bold",
   fontFamily: "Arial, sans-serif",
   textTransform: "none",
@@ -74,17 +75,19 @@ export const StyledDatePicker = styled(DatePicker)({
 
   // Override MUI InputBase styles
   "& .MuiInputBase-root.MuiOutlinedInput-root": {
-    color: "white",
+    color: "#dad7d7",
     borderRadius: "8px",
+    lineHeight: "1.25",
     border: "0px solid transparent !important",
     "& .MuiOutlinedInput-input": {
-      padding: "12px 0 12px 14px"
-    }
+      padding: "12px 0 12px 14px",
+      height: "auto",
+    },
   },
-  
+
   // Customize Input Adornment button color
   "& .MuiInputAdornment-root .MuiButtonBase-root": {
-    color: "white",
+    color: "#dad7d7",
   },
 
   // Override MUI OutlinedInput notched outline

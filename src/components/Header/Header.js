@@ -34,7 +34,7 @@ const Header = () => {
   return (
     <Box className={styles.header}>
       <IconButton className={styles.menu_icon} onClick={toggleDrawer(true)}>
-        <MenuIcon sx={{ color: "white" }} />
+        <MenuIcon sx={{ color: "#dad7d7" }} />
       </IconButton>
       <Drawer anchor="left" open={drawerOpen} onClose={toggleDrawer(false)}>
         <Box

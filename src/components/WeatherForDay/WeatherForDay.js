@@ -8,14 +8,50 @@ import DetailCard from "../DetailCard/DetailCard";
 import { getDayName } from "../../utils/utils";
 
 const WeatherForDay = (props) => {
-  const { weather } = props;
+  const { weather, location } = props;
+
+  const renderHeader = () => {
+    if (!location) {
+      return (
+        <Typography className="text_6 text_color0">
+          {weather?.date} ({getDayName(weather?.date)}) Weather Conditions
+        </Typography>
+      );
+    } else {
+      return (
+        <Box sx={{ display: "flex", flexWrap: "wrap", alignItems: "center" }}>
+          <Typography className="text_6 text_color0" sx={{ mr: "7px" }}>
+            {weather?.date}
+          </Typography>
+          <Typography
+            className="text_6 mt_2 text_color0"
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              flexWrap: { xs: "wrap", sm: "nowrap" },
+              columnGap: "5px",
+            }}
+          >
+            {location?.name} Weather Forecast
+            <Box
+              component={"span"}
+              sx={{
+                fontSize: { xs: "14px", sm: "16px" },
+                color: "#898989",
+                display: { xs: "block", sm: "inline" },
+              }}
+            >
+              ({location?.region}, {location?.country})
+            </Box>
+          </Typography>
+        </Box>
+      );
+    }
+  };
+
   return (
     <Box sx={{ mt: "20px" }}>
-      <Typography
-        sx={{ fontSize: { xs: "16px", sm: "20px" }, fontWeight: "bold" }}
-      >
-        {weather?.date}({getDayName(weather?.date)}) Weather Conditions
-      </Typography>
+      {renderHeader()}
       <Box className="card_style">
         <Box
           sx={{
@@ -42,7 +78,7 @@ const WeatherForDay = (props) => {
               <Box>
                 <Typography
                   className="text_2 text_color1"
-                  sx={{ whiteSpace: "nowrap" }}
+                  sx={{ whiteSpace: {xs: "wrap", sm:"nowrap"} }}
                 >
                   {weather?.day?.condition?.text}
                 </Typography>

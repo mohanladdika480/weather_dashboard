@@ -4,7 +4,7 @@ const PageLoader = (props) => {
   return (
     <Backdrop
       sx={{
-        color: "white",
+        color: "#dad7d7",
         zIndex: (theme) => theme.zIndex.drawer + 1,
         backdropFilter: "blur(2px)",
       }}

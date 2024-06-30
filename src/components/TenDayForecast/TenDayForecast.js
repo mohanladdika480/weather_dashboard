@@ -10,11 +10,7 @@ const TenDayForecast = (props) => {
 
   return (
     <Box sx={{ mt: "20px" }}>
-      <Typography
-        sx={{ fontSize: { xs: "16px", sm: "20px" }, fontWeight: "bold" }}
-      >
-        10-day Forecast
-      </Typography>
+      <Typography className="text_6 text_color0">10-day Forecast</Typography>
       <Box className="card_style horizontal_scroll_style">
         {forecastData?.map((weather, index) => (
           <Box
@@ -39,8 +35,12 @@ const TenDayForecast = (props) => {
               <Typography className="text_bold text_2 mt_2">
                 {index === 0 ? "Today" : weather?.date}
               </Typography>
-              <Typography className="text_2 text_normal mt_2">{weather?.day?.avgtemp_c}&deg;C</Typography>
-              <Typography className="text_2 text_normal mt_2">{weather?.day?.condition?.text}</Typography>
+              <Typography className="text_2 text_normal mt_2">
+                {weather?.day?.avgtemp_c}&deg;C
+              </Typography>
+              <Typography className="text_2 text_normal mt_2">
+                {weather?.day?.condition?.text}
+              </Typography>
             </Box>
           </Box>
         ))}

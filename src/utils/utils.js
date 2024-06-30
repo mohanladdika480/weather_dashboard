@@ -1,3 +1,5 @@
+import dayjs from "dayjs";
+
 export const formatTime = (datetime) => {
   const date = new Date(datetime);
   let hours = date.getHours();
@@ -20,4 +22,17 @@ export const getDayName = (date) => {
     "Saturday",
   ];
   return days[new Date(date)?.getDay()];
+};
+
+export const isMoreThan14DaysFromToday = (date) => {
+  const today = dayjs().startOf("day");
+  const inputDate = dayjs(date).startOf("day");
+  const diffInDays = inputDate.diff(today, "day");
+  return diffInDays > 13;
+};
+
+export const formatDateToYYYYMMDD = (date) => {
+  const parsedDate = dayjs(date);
+  const formattedDate = parsedDate.format("YYYY-MM-DD");
+  return formattedDate;
 };

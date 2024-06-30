@@ -7,11 +7,7 @@ const HourlyForecast = (props) => {
 
   return (
     <Box sx={{ mt: "20px" }}>
-      <Typography
-        sx={{ fontSize: { xs: "16px", sm: "20px" }, fontWeight: "bold" }}
-      >
-        Hourly Forecast
-      </Typography>
+      <Typography className="text_6 text_color0">Hourly Forecast</Typography>
       <Box
         sx={{
           background: "#424663",

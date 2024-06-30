@@ -10,7 +10,7 @@ const ButtonLoader = (props) => {
         <>
           <CircularProgress
             sx={{
-              color: "white",
+              color: "#dad7d7",
               width: "20px !important",
               height: "20px !important",
             }}

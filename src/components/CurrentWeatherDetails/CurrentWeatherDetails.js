@@ -1,19 +1,16 @@
 import React from "react";
-import {Box, Typography} from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import temperatureIcon from "../../assets/temperature.png";
 import humidityIcon from "../../assets/humidity.png";
 import precipIcon from "../../assets/rain.png";
 import windIcon from "../../assets/wind.png";
 import DetailCard from "../DetailCard/DetailCard";
 
-
 const CurrentWeatherDetails = (props) => {
   const { forecastData } = props;
   return (
     <>
-      <Typography
-        sx={{ fontSize: { xs: "16px", sm: "20px" }, fontWeight: "bold" }}
-      >
+      <Typography className="text_6 text_color0">
         Current Weather in {forecastData?.location?.name}{" "}
         <Box
           component={"span"}

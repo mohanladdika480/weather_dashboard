@@ -1,0 +1,74 @@
+{
+  "farming": {
+    "temperature": {
+      "below_22C": "Ideal for planting crops that prefer cooler temperatures.",
+      "22C_to_28C": "Good for general farm work without extreme heat stress.",
+      "28C_to_36C": "Monitor water levels; some crops may benefit from warmth, while others may need extra irrigation.",
+      "above_36C": "Take precautions against heat stress for both crops and livestock."
+    },
+    "humidity": {
+      "below_40": "Monitor soil moisture; irrigation may be necessary.",
+      "40_to_60": "Generally favorable conditions for most crops.",
+      "above_60": "Watch for fungal diseases; ensure good ventilation."
+    },
+    "precipitation": {
+      "none": "No significant impact on activities.",
+      "light": "Minimal impact, but monitor soil moisture levels.",
+      "moderate": "Beneficial for most crops; avoid working in wet fields.",
+      "heavy": "Risk of flooding; assess drainage systems and protect crops from waterlogging."
+    },
+    "wind": {
+      "light": "Minimal impact.",
+      "moderate": "Secure lightweight structures; protect wind-sensitive crops.",
+      "strong": "Secure all equipment and structures; protect crops from wind damage."
+    }
+  },
+  "travel": {
+    "temperature": {
+      "below_22C": "Comfortable for outdoor activities.",
+      "22C_to_28C": "Pleasant conditions for sightseeing and outdoor adventures.",
+      "28C_to_36C": "Stay hydrated; avoid strenuous activities during peak heat.",
+      "above_36C": "Plan activities in cooler times of the day; stay hydrated and seek shade."
+    },
+    "humidity": {
+      "below_40": "Dry conditions; hydrate adequately.",
+      "40_to_60": "Comfortable conditions for most travelers.",
+      "above_60": "Prepare for potential discomfort; seek air-conditioned areas."
+    },
+    "precipitation": {
+      "none": "No need for rain gear; enjoy outdoor activities.",
+      "light": "Carry a light rain jacket or umbrella.",
+      "moderate": "Plan indoor activities or visit museums.",
+      "heavy": "Check weather updates; be prepared for delays or indoor activities."
+    },
+    "wind": {
+      "light": "Minimal impact on travel plans.",
+      "moderate": "Prepare for wind chill; secure loose items.",
+      "strong": "Expect flight or outdoor activity delays; take precautions against strong gusts."
+    }
+  },
+  "events": {
+    "temperature": {
+      "below_22C": "Provide blankets or heaters for outdoor events.",
+      "22C_to_28C": "Comfortable conditions for most outdoor events.",
+      "28C_to_36C": "Provide shaded areas and hydration stations.",
+      "above_36C": "Consider rescheduling or moving indoors; provide ample cooling options."
+    },
+    "humidity": {
+      "below_40": "Comfortable conditions; ensure hydration stations.",
+      "40_to_60": "Monitor attendee comfort; provide ventilation if indoors.",
+      "above_60": "Ensure air circulation; consider indoor venues or shaded areas."
+    },
+    "precipitation": {
+      "none": "No rain gear needed; enjoy the event.",
+      "light": "Provide umbrellas or rain ponchos; consider covered seating.",
+      "moderate": "Plan for covered walkways and indoor alternatives.",
+      "heavy": "Have contingency plans; consider rescheduling or indoor venues."
+    },
+    "wind": {
+      "light": "Minimal impact on event setup.",
+      "moderate": "Secure event structures; consider windbreaks.",
+      "strong": "Review safety protocols; secure tents and outdoor displays."
+    }
+  }
+}
