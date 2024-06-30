@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import WeatherDashboard from "../pages/WeatherDashboard";
 import TailoredWeatherForecasts from "../pages/TailoredWeatherForecasts";
 import Header from "../components/Header/Header";
@@ -7,7 +7,7 @@ import { RoutingURLs } from "../components/constants/RoutingURLs";
 
 const AppRoutes = () => {
   return (
-    <BrowserRouter basename="weather_dashboard">
+    <HashRouter>
       <Header />
       <Routes>
         <Route path={RoutingURLs.dashboard} element={<WeatherDashboard />} />
@@ -16,7 +16,7 @@ const AppRoutes = () => {
           element={<TailoredWeatherForecasts />}
         />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
