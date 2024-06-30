@@ -102,7 +102,7 @@ const WeatherSuggestion = (props) => {
         )}
         <Typography
           className={`text_2 ${
-            forecastforDay?.day?.totalprecip_mm < 4 ? "mt_12" : ""
+            forecastforDay?.day?.totalprecip_mm < 4 ? "mt_16" : ""
           }`}
         >
           Precipitation ({forecastforDay?.day?.totalprecip_mm}mm):{" "}
@@ -110,11 +110,11 @@ const WeatherSuggestion = (props) => {
             {getPrecipitationSuggestion()}
           </span>
         </Typography>
-        <Typography className="text_2 mt_12">
+        <Typography className="text_2 mt_16">
           Wind ({forecastforDay?.day?.maxwind_kph}kph):{" "}
           <span className="text_2 text_normal ">{getWindSuggestion()}</span>
         </Typography>
-        <Typography className="text_2 mt_12">
+        <Typography className="text_2 mt_16">
           Humidity ({forecastforDay?.day?.avghumidity}%):{" "}
           <span className="text_2 text_normal ">{getHumditySuggestion()}</span>
         </Typography>

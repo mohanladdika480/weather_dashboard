@@ -104,8 +104,11 @@ p,
   margin-top: 5px !important;
 }
 
-.mt_12 {
-  margin-top: 12px !important;
+.mt_16 {
+  margin-top: 16px !important;
+  @media screen and (max-width: 600px) {
+    margin-top: 12px !important;
+  }
 }
 
 .mt_2 {
