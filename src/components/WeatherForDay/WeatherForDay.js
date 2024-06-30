@@ -93,7 +93,7 @@ const WeatherForDay = (props) => {
                 display: "flex",
                 gap: "16px",
                 p: "10px",
-                background: "#616790",
+                background: "#52577b",
                 borderRadius: "6px",
               }}
             >

@@ -58,7 +58,7 @@ const CustomDatePicker = (props) => {
                     color: "#dad7d7",
                   },
                   "& .MuiPickersYear-yearButton.Mui-selected": {
-                    backgroundColor: "#616790",
+                    backgroundColor: "#52577b",
                   },
                   "& .MuiYearCalendar-root": {
                     scrollbarWidth: "none",

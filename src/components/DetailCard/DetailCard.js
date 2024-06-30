@@ -6,7 +6,7 @@ const DetailCard = ({ text, icon, value }) => {
     <Box
       sx={{
         textAlign: "center",
-        background: "#616790",
+        background: "#52577b",
         p: "5px",
         borderRadius: "6px",
         width: { xs: "120px", sm: "150px" },

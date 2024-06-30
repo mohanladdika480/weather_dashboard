@@ -44,13 +44,13 @@ export const CustomTextField = styled(TextField)`
 
 export const PrimaryButton = styled(Button)(({ theme }) => ({
   padding: "8px 12px",
-  backgroundColor: "#ff009061",
+  backgroundColor: "#00639a",
   color: "#dad7d7",
   fontWeight: "bold",
   fontFamily: "Arial, sans-serif",
   textTransform: "none",
   "&:hover": {
-    backgroundColor: "#ff0c0c69",
+    backgroundColor: "#007e9a",
   },
 }));
 

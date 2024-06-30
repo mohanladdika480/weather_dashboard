@@ -11,9 +11,9 @@ const CustomRadioButton = (props) => {
           sx={{
             "& .MuiSvgIcon-root": {
               fontSize: 24,
-              fill: "#882e14",
+              fill: "#0896b6",
             },
-            color: "#882e14",
+            color: "#0896b6",
             p: "0px 5px 0 0",
           }}
         />

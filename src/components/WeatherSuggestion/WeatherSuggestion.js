@@ -68,7 +68,7 @@ const WeatherSuggestion = (props) => {
     const categoryData = getSuggestionDayByCategory()?.humidity;
     let humiditySuggestion = "";
     if (humidity < 40) {
-      humiditySuggestion = categoryData?.below_22C;
+      humiditySuggestion = categoryData?.below_40;
     } else if (humidity < 60) {
       humiditySuggestion = categoryData?.["40_to_60"];
     } else {
