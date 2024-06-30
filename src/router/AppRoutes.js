@@ -7,7 +7,7 @@ import { RoutingURLs } from "../components/constants/RoutingURLs";
 
 const AppRoutes = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="weather_dashboard">
       <Header />
       <Routes>
         <Route path={RoutingURLs.dashboard} element={<WeatherDashboard />} />

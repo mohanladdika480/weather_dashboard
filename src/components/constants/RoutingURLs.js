@@ -1,4 +1,4 @@
 export const RoutingURLs = {
-  dashboard: "/weather_dashboard",
+  dashboard: "/",
   tailoredForecast: "/tailored_forecast"
 }
